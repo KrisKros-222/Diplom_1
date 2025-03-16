@@ -7,9 +7,14 @@ public class BunTest {
     private float price = 100;
 
     @Test
-    public void bunDataCheck() {
+    public void bunNameCheck() {
         Bun bun = new Bun(name,price);
         Assert.assertEquals(name,bun.getName());
+    }
+
+    @Test
+    public void bunPriceCheck() {
+        Bun bun = new Bun(name,price);
         Assert.assertEquals(price,bun.getPrice(),0);
     }
 
